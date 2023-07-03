@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+    <style>
+body {
+display: flex;
+justify-content: center; align-items: center;
+height: 100vh;
+text-decoration: none;
+}
+.box {
+font-size: 20px;
+color: white; flex-direction: column;
+height: 800px;
+width: 1440px;
+border-radius: 10px; background: #ea79db;
+display: flex; align-items: center;
+justify-content: center;
+}
+.buttons-container {
+display: flex; justify-content: space-around;
+height: 50px;
+width: 150px;
+}
+button {
+height: 30px;
+width: 50px;
+background: white; border-radius: 5px;
+color: blue; font-weight: 600;
+}</style>
+<link rel="icon" href="https://memehay.com/meme/20211011/meo-cam-bong-hoa-tren-tay-manh-me-len.jpg">
+</head>
+<body>
+<div class="box">
+    <p>Amorzinho vc aceita casar cmg e passar sua vida toda <strong>SÓ</strong> cmg, para <strong>SEMPRE</strong>? &#128073;&#128072;&#128150;</p> 
+    <div class="buttons-container">
+            <a href="2.html"><button>Sim</button></a>        
+        <a href="3.html"><button id="no">Não</button></a>
+    </div>
+</div>
+</body>
+<script>
+    let button = document.getElementById('no');
+    let height = window.innerHeight - 50;
+    let width= window.innerWidth - 50;
+    
+    button.addEventListener('mouseover', function () {
+        button.style.position = "absolute"; 
+        button.style.top = Math.random() * height + "px"; 
+        button.syle.left = Math.random() * width + "px";
+    })
+    </script>
+</html>
